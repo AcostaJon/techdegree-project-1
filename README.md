@@ -1,2 +1,2 @@
 # techdegree-project-1
- My first Techdegree project
+A single page resume for a client
