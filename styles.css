@@ -1,28 +1,31 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
+/* body */
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: url('images/bodyBackground.jpg') no-repeat center ;
+  background: url('images/bodyBackground.jpg') no-repeat center;
 }
+
 /* Link Styles */
 
 a {
   text-decoration: none;
   color: #999;
 }
+
 a:hover {
   color: #6633ff;
 }
 
 /* Section Styles */
-
+/* navigaition */
 .main-nav {
   width: 100%;
   background: black;
@@ -31,6 +34,7 @@ a:hover {
   position: fixed;
   text-align: center;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -41,30 +45,36 @@ a:hover {
 }
 
 .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
+  display: block;
+  margin-right: auto;
+  color: white;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .5s;
 }
+
 .nav a:hover {
   color: white
 }
 
+/* header */
 header {
   text-align: center;
-  background: url('images/beach.jpg') no-repeat center ;
+  background: url('images/beach.jpg') no-repeat center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -73,9 +83,12 @@ header .profile-image {
   border: 4px dotted #e7e7e7;
   transition: all .5s;
 }
+
 header .profile-image:hover {
   transform: scale(1.5) rotate(360deg);
 }
+
+/* main contnent */
 .tag {
   background-color: #efefef;
   color: black;
@@ -83,11 +96,13 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
+
 .location {
   background-color: #222;
   color: yellow;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -98,6 +113,7 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
 .card:hover {
   border-color: #ff99ff;
 }
@@ -120,6 +136,7 @@ ul.skills {
   background: #0399ff;
 }
 
+/* footer */
 footer {
   width: 100%;
   min-height: 30px;
@@ -141,6 +158,7 @@ footer ul li {
   display: inline-block;
 }
 
+/* all links */
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -151,43 +169,54 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
+
 a.twitter {
   background-image: url(images/twitter.svg);
 }
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
+  /* flex items */
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
+
+  /* header */
 
   header {
     min-height: 470px;
   }
 
+  /* navigation */
   .nav {
     max-width: 1200px;
     padding: 0 30px;
   }
 
+  /* main content */
 
   main {
     padding-top: 20px;
@@ -197,6 +226,7 @@ a.social:hover {
     line-height: 1.6em;
   }
 
+  /* footer */
   footer {
     font-size: 1.3em;
     max-width: 1200px;
@@ -204,4 +234,3 @@ a.social:hover {
   }
 
 }
-
